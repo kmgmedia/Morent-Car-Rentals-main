@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+
+
+@font-face {
+  font-family: "Arapey", serif;
+  src: url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+}
+
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -8,15 +15,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(0, 130, 30);
-}
-
-body h1 {
-  color: white;
-}
-body p {
-  color: white;
 }
