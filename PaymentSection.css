@@ -1,0 +1,163 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Container Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left and Right Section Styles */
+.left-section, .right-section {
+    background-color: #fff;
+    border-radius: 4%;
+    padding: 24px;
+}
+.left-section {
+    width: 50%;
+}
+.right-section {
+    width: 37%;
+}
+
+/* Billing Info Section */
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"] {
+    width: calc(50% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+input[type="text"]:nth-child(even) {
+    margin-right: 0;
+}
+.half-width {
+    display: flex;
+    justify-content: space-between;
+}
+.full-width {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Rental Info Section */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.radio-group input {
+    margin-right: 10px;
+}
+
+/* Payment Method Section */
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.payment-option img {
+    width: 50px; /* Adjust the size of the payment logos */
+    margin-left: 10px;
+}
+
+/* Add spacing between the logos */
+.payment-option:not(:last-child) {
+    margin-bottom: 15px; /* Adds space between the payment methods */
+}
+
+/* Confirmation Section */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px; /* Adjust the space between the checkboxes and button */
+}
+.checkbox-group input {
+    margin-bottom: 5px;
+}
+.btn-primary {
+    background-color: #4263eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 20px; /* Adjust this value to control the space above the button */
+    font-weight: bolder;
+}
+
+/* Right Section (Rental Summary) */
+.right-section .rental-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+.right-section .rental-summary img {
+    width: 80%;
+    margin-bottom: 10px;
+}
+.right-section .summary-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.apply-code {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+.footer ul li {
+    margin-right: 20px;
+}
+.footer ul li a {
+    color: #4263eb;
+    text-decoration: none;
+}
+.footer ul li:last-child {
+    margin-right: 0;
+}
