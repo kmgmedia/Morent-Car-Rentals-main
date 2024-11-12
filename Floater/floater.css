@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f6f7f9;
+}
+
+#floater-wrapper {
+  background-color: #fff;
+
+  min-height: 100vh;
+  padding: 20px;
+  width: 220px;
+  /* border: 1px solid #000; */
+}
+
+.container-1 .sub-heading,
+.container-2 .sub-heading,
+.container-3 .sub-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #90a3bf;
+  font-size: 12px;
+}
+
+.container-2,
+.container-3 {
+  margin-top: 32px;
+}
+
+.check-box-wrapper {
+  margin-top: 10px;
+}
+
+.check-box-1-wrapper,
+.check-box-2-wrapper,
+.check-box-3-wrapper,
+.check-box-4-wrapper,
+.check-box-5-wrapper,
+.check-box-6-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.check-box-1-wrapper,
+.check-box-2-wrapper,
+.check-box-3-wrapper,
+.check-box-4-wrapper,
+.check-box-5-wrapper,
+.check-box-6-wrapper {
+  margin-top: 18px;
+}
+
+.check-box-1-wrapper label,
+.check-box-2-wrapper label,
+.check-box-3-wrapper label,
+.check-box-4-wrapper label,
+.check-box-5-wrapper label,
+.check-box-6-wrapper label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #90a3bf;
+  font-size: 12px;
+}
+
+.slider-container {
+  width: 200px;
+  margin: 20px 0;
+  /* text-align: center; */
+}
+
+.slider-container .price-display {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #90a3bf;
+  font-size: 20px;
+}
+
+/* input[type="range"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: brown;
+} */
+
+.price-display {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+}
