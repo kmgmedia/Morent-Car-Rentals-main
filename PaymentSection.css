@@ -83,7 +83,25 @@ label {
 }
 .payment-option img {
     width: 50px; /* Adjust the size of the payment logos */
-    margin-left: 10px;
+    margin-left: 3px;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="number"]:hover {
+    border-color: blue; /* Make the border blue on hover */
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus {
+    border-color: blue; /* Change border to blue when input is focused */
+    outline: none; /* Remove default outline */
+}
+#card-number, #expiry-date, #cvv {
+    width: 80px; /* Set a smaller width suitable for dummy text like 'CVV' */
 }
 
 /* Add spacing between the logos */
@@ -96,6 +114,10 @@ label {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px; /* Adjust the space between the checkboxes and button */
+    input[type="checkbox"]:checked {
+        accent-color: blue; /* Change checkbox color to blue when selected */
+    }
+    
 }
 .checkbox-group input {
     margin-bottom: 5px;
