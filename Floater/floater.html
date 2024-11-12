@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floater - (Sidebar)</title>
+    <link rel="stylesheet" href="./floater.css" />
+  </head>
+  <body>
+    <aside id="floater-wrapper">
+      <!-- section 1 -->
+      <section class="container-1">
+        <h2 class="sub-heading">Type</h2>
+        <!-- check boxes -->
+        <div class="check-box-wrapper">
+          <div class="check-box-1-wrapper">
+            <input type="checkbox" id="myCheckbox-1" checked />
+            <label>Sport (10)</label>
+          </div>
+          <div class="check-box-2-wrapper">
+            <input type="checkbox" id="myCheckbox-2" checked />
+            <label>SUV (12)</label>
+          </div>
+          <div class="check-box-3-wrapper">
+            <input type="checkbox" id="myCheckbox-3" />
+            <label>MPV (16)</label>
+          </div>
+          <div class="check-box-4-wrapper">
+            <input type="checkbox" id="myCheckbox-4" />
+            <label>Sedan (20)</label>
+          </div>
+          <div class="check-box-5-wrapper">
+            <input type="checkbox" id="myCheckbox-5" />
+            <label>Coupe (14)</label>
+          </div>
+          <div class="check-box-6-wrapper">
+            <input type="checkbox" id="myCheckbox-6" checked />
+            <label>Hatchback (4)</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section class="container-2">
+        <h2 class="sub-heading">Capacity</h2>
+        <!-- check boxes -->
+        <div class="check-box-wrapper">
+          <div class="check-box-1-wrapper">
+            <input type="checkbox" id="myCheckbox-7" checked />
+            <label>2 Person (10)</label>
+          </div>
+          <div class="check-box-2-wrapper">
+            <input type="checkbox" id="myCheckbox-8" />
+            <label>4 Person (14)</label>
+          </div>
+          <div class="check-box-3-wrapper">
+            <input type="checkbox" id="myCheckbox-9" />
+            <label>6 Person (12)</label>
+          </div>
+          <div class="check-box-4-wrapper">
+            <input type="checkbox" id="myCheckbox-10" checked />
+            <label>8 or More (16)</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 -->
+      <section class="container-3">
+        <h2 class="sub-heading">Price</h2>
+        <!-- price slider -->
+        <div class="slider-container">
+          <input
+            type="range"
+            id="priceSlider"
+            min="0.00"
+            max="100.00"
+            value="50.00"
+            oninput="updatePrice()"
+          />
+          <div class="price-display">
+            Max: $<span id="priceValue">50.00</span>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- javascript -->
+    <script src="floater.js"></script>
+  </body>
+</html>
