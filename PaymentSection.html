@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morent Payment Page</title>
-    <link rel="stylesheet" href="morent.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="payment.css"> <!-- Link to external CSS file -->
+    <script src="payment.js" defer></script> <!-- Link to external JS file -->
 </head>
 <body>
 
     <div class="container">
         <!-- Left Section -->
         <div class="left-section">
-            
-            <!-- Billing Info Section -->
+            <!-- Billing Info -->
             <div class="section">
                 <h2>Billing Info</h2>
                 <div class="half-width">
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <!-- Rental Info Section -->
+            <!-- Rental Info -->
             <div class="section">
                 <h2>Rental Info</h2>
                 <div class="radio-group">
@@ -39,36 +39,33 @@
                 <input type="time" placeholder="Select your time" class="full-width">
             </div>
 
-            <!-- Payment Method Section -->
+            <!-- Payment Method -->
             <div class="section">
                 <h2>Payment Method</h2>
-                
-                <!-- Credit Card Option -->
                 <div class="payment-option">
                     <label>
                         <input type="radio" name="payment" value="credit-card" checked>
                         <img src="images/Visa logo.svg" alt="Visa" class="payment-logo">
                     </label>
                 </div>
-
-                <!-- PayPal Option -->
                 <div class="payment-option">
                     <label>
                         <input type="radio" name="payment" value="paypal">
                         <img src="images/PayPal logo.svg" alt="PayPal" class="payment-logo">
                     </label>
                 </div>
-
-                <!-- Bitcoin Option -->
                 <div class="payment-option">
                     <label>
                         <input type="radio" name="payment" value="bitcoin">
                         <img src="images/Bitcoin logo.svg" alt="Bitcoin" class="payment-logo">
                     </label>
                 </div>
+
+                <!-- Payment Details -->
+                <div id="payment-details"></div> <!-- This will be updated dynamically -->
             </div>
 
-            <!-- Confirmation Section -->
+            <!-- Confirmation -->
             <div class="section">
                 <h2>Confirmation</h2>
                 <div class="checkbox-group">
@@ -79,7 +76,7 @@
             </div>
         </div>
 
-        <!-- Right Section (Rental Summary) -->
+        <!-- Right Section -->
         <div class="right-section">
             <div class="rental-summary">
                 <img src="images/Nissan GT-R.png" alt="Nissan GT-R">
@@ -87,31 +84,27 @@
                     <span>Nissan GT-R</span>
                     <span>$80.00</span>
                 </div>
-                
-                <!-- Apply Coupon Code -->
                 <div class="apply-code">
                     <input type="text" placeholder="Coupon Code">
                     <button class="btn-primary">Apply</button>
                 </div>
-
                 <div class="summary-item">
                     <span>Total Rental Price</span>
                     <span>$80.00</span>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>&copy;2022 Morent. All rights reserved</p>
+                <ul>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Partnership</a></li>
+                    <li><a href="#">Business Relation</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy;2022 Morent. All rights reserved</p>
-        <ul>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Featured</a></li>
-            <li><a href="#">Partnership</a></li>
-            <li><a href="#">Business Relation</a></li>
-        </ul>
-    </div>
-
 </body>
 </html>
