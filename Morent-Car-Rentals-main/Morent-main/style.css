@@ -89,6 +89,10 @@
   background-color: #54a6ff;
 }
 
+.first-hero {
+  background-color: #3563E9;
+}
+
 
 .ads {
   position: absolute;
@@ -102,7 +106,7 @@
 }
 
 .ads-1 {
-  width: 40%;
+  width: 45%;
   position: relative;
   border-radius: 10px;
   background-color: #54a6ff;
@@ -112,10 +116,21 @@
   font-size: 32px;
   color: #fff;
   font-family: 'Plus Jakarta Sans';
+  margin-right: 5rem;
+}
+
+
+.ads-1 {
+  display: inline-block;
 }
 
 .ads-2 {
-  width: 40%;
+  display: inline-block;
+}
+
+
+.ads-2 {
+  width: 45%;
   position: absolute;
   border-radius: 10px;
   background-color: #3563E9;
