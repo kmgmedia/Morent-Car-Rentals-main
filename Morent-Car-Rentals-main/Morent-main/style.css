@@ -42,31 +42,54 @@
   gap: 16px;
 }
 .rental-car {
-  width: 80px;
+  width: 120px;
   position: relative;
   letter-spacing: -0.02em;
   line-height: 150%;
   font-weight: 600;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 24px;
-  flex-shrink: 0;
-}
-.button-rent {
-  width: 120px;
-  border-radius: 4px;
-  background-color: #3563e9;
-  height: 44px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 20px;
-  box-sizing: border-box;
-  text-align: center;
   font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  height: 44px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  flex-direction: row;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  background-color: #3563e9;
 }
+
+.rental-car2 {
+  width: 120px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 600;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  height: 44px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  flex-direction: row;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  background-color: #54a6ff;
+}
+
+
 .ads {
   position: absolute;
   top: 24px;
@@ -77,11 +100,25 @@
   justify-content: flex-start;
   gap: 20px;
 }
+
 .ads-1 {
   width: 40%;
   position: relative;
   border-radius: 10px;
   background-color: #54a6ff;
+  height: 410px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 32px;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans';
+}
+
+.ads-2 {
+  width: 40%;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #3563E9;
   height: 410px;
   overflow: hidden;
   text-align: left;
@@ -99,6 +136,25 @@
   object-fit: cover;
   padding-left: 120px;
 }
+
+.image-8-icon {
+  width: 80%;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 110px;
+  object-fit: cover;
+  padding-left: 150px;
+}
+
+.rectangle-icon {
+  width: 100%;
+  position: relative;
+  max-width:13%;
+  overflow: hidden;
+  height: 120px;
+}
+
 
 .ellipse-div {
   width: 100%;
