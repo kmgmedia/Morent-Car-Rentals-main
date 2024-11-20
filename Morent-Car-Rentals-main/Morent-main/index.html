@@ -27,6 +27,67 @@
   </head>
   <body class="bg-color">
 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <!-- logo-search-wrapper -->
+      <div class="logo-search-wrapper">
+        <!-- logo -->
+        <div class="logo">
+          <a href="/">
+            <img src="assets/logo.png" alt="logo" class="logo-img" />
+          </a>
+        </div>
+
+        <!-- search -->
+        <div class="search-wrapper">
+          <img
+            src="./assets/search.png"
+            alt="search_icon"
+            class="search-icon"
+          />
+          <input
+            type="text"
+            placeholder="Search something here"
+            class="search-input"
+          />
+          <img
+            src="./assets/filter.png"
+            alt="filter_icon"
+            class="filter-icon"
+          />
+        </div>
+      </div>
+
+      <!-- links -->
+
+      <div class="nav-links-wrapper">
+        <img src="./assets/heart.png" alt="like_icon" />
+        <div class="notification-wrapper">
+          <div class="notification-indicator"></div>
+          <img src="./assets/notification.png" alt="notification_icon" />
+        </div>
+        <img src="./assets/setting.png" alt="setting" />
+        <img src="./assets//persona.png" alt="profile" />
+      </div>
+      <!-- <ul class="nav-links">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/about">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="dropdown-btn">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="/services/rent-a-car">Rent a Car</a></li>
+            <li><a href="/services/fleet">Fleet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="/contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div> -->
+    </nav>
+
     <!-- Beginning of Landing-page left Side-->
 
     <section id="first-hero">
@@ -179,7 +240,7 @@
         </div>
         </div>
         <div class="section-6">
-          <button class="text-8">Rent Now</button>
+          <button onclick="document.location" class="text-8">Rent Now</button>
         </div>
         </div>
         <div class="img-5"></div>
@@ -769,6 +830,6 @@
     </section>
 
 <!-- JavaScript -->
-    <script src="class.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
