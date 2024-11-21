@@ -9,7 +9,6 @@
   background: #f6f7f9;
 }
 
-
 /* Reset default styles for all elements */
 * {
   margin: 0;
@@ -26,13 +25,15 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  width: 100%;
+  /* width: 100%; */
   background-color: white; /* Blue background */
   display: flex;
   justify-content: space-between; /* Align items to the left */
   align-items: center;
   padding: 30px;
+  margin-bottom: 2rem;
   z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo Image Styling */
@@ -115,7 +116,6 @@ body {
   top: -5px;
   right: -3px;
 }
-
 
 /* Body Starts from here */
 
@@ -395,6 +395,74 @@ body {
 @media screen and (max-width: 480px) {
 }
 
+/* <!-- popular Cars selection --> */
+
+.box1 {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 8px;
+  position: relative;
+  width: 432px;
+  height: 44px;
+  padding: 0 20px 0 40px;
+  margin-top: 2.5rem;
+  
+  }
+  .text23 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 92px;
+  height: 24px;
+  color: #90a3bf;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+  }
+  .group1 {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 8px;
+  position: relative;
+  width: 104px;
+  height: 44px;
+  padding: 0 20px 0 20px;
+  z-index: 2;
+  border-radius: 4px;
+  }
+
+  .text-22 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 64px;
+  height: 28px;
+  color: #3563e9;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+  }
 /* <!-- BODY-CARDS SESSION --> */
 
 .mainn-1 {
@@ -737,7 +805,6 @@ body {
   -webkit-transition-property: box-shadow, transform;
 }
 
-
 .text-8 {
   display: flex;
   align-items: center;
@@ -774,4 +841,125 @@ body {
   left: 0;
   background-size: cover;
   z-index: 25;
+}
+
+/* <!-- Last big button --> */
+
+.section-66 .text-88 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 8px;
+  position: relative;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  border: 0;
+  padding: 0 20px 0 20px;
+  margin: 6rem 0 6rem 50rem;
+  background: #3563e9;
+  z-index: 8;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+}
+
+.text-88 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 76px;
+  height: 24px;
+  color: #ffffff;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.32px;
+  z-index: 9;
+}
+
+/* <!-- Footer session --> */
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 1rem;
+}
+
+.footer-logo h2 {
+  color: #007bff;
+  margin: 0;
+}
+
+.footer-logo p {
+  margin: 5px 0 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* New: Styling for splitting the vision statement */
+.footer-logo p span {
+  display: block; /* Forces each sentence to appear on a separate line */
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Aligns menu items horizontally */
+  gap: 15px; /* Adds space between items */
+  margin-right: 4rem;
+}
+
+.footer-nav ul li {
+  margin: 0;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #666;
+  margin-left: 1rem;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin-right: 4rem;
+}
+
+.footer-bottom ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
 }

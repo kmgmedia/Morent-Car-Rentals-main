@@ -1,107 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Floater - (Sidebar)</title>
-    <link rel="stylesheet" href="./floater.css" />
-  </head>
-  <body>
-    <aside id="floater-wrapper">
-      <!-- section 1 -->
-      <section class="container-1">
-        <h2 class="sub-heading">Type</h2>
-        <!-- check boxes -->
-        <div class="check-box-wrapper">
-          <div class="check-box-1-wrapper">
-            <input type="checkbox" id="myCheckbox-1" checked />
-            <label>Sport (10)</label>
-          </div>
-          <div class="check-box-2-wrapper">
-            <input type="checkbox" id="myCheckbox-2" checked />
-            <label>SUV (12)</label>
-          </div>
-          <div class="check-box-3-wrapper">
-            <input type="checkbox" id="myCheckbox-3" />
-            <label>MPV (16)</label>
-          </div>
-          <div class="check-box-4-wrapper">
-            <input type="checkbox" id="myCheckbox-4" />
-            <label>Sedan (20)</label>
-          </div>
-          <div class="check-box-5-wrapper">
-            <input type="checkbox" id="myCheckbox-5" />
-            <label>Coupe (14)</label>
-          </div>
-          <div class="check-box-6-wrapper">
-            <input type="checkbox" id="myCheckbox-6" checked />
-            <label>Hatchback (4)</label>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floater - (Sidebar)</title>
+  <link rel="stylesheet" href="./floater.css" />
+
+  <!-- fontawesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <!-- logo-search-wrapper -->
+    <div class="logo-search-wrapper">
+      <!-- logo -->
+      <div class="logo">
+        <a href="/">
+          <img src="assets/logo.png" alt="logo" class="logo-img" />
+        </a>
+      </div>
+
+      <!-- search -->
+      <div class="search-wrapper">
+        <img src="./assets/search.png" alt="search_icon" class="search-icon" />
+        <input type="text" placeholder="Search something here" class="search-input" />
+        <img src="./assets/filter.png" alt="filter_icon" class="filter-icon" />
+      </div>
+    </div>
+
+    <!-- links -->
+
+    <div class="nav-links-wrapper">
+      <img src="./assets/heart.png" alt="like_icon" />
+      <div class="notification-wrapper">
+        <div class="notification-indicator"></div>
+        <img src="./assets/notification.png" alt="notification_icon" />
+      </div>
+      <img src="./assets/setting.png" alt="setting" />
+      <img src="./assets//persona.png" alt="profile" />
+    </div>
+  </nav>
+
+  <!-- floater-wrapper -->
+
+  <aside id="floater-wrapper">
+    <!-- section 1 -->
+    <section class="container-1">
+      <h2 class="sub-heading">Type</h2>
+      <!-- check boxes -->
+      <div class="check-box-wrapper">
+        <div class="check-box-1-wrapper">
+          <input type="checkbox" id="myCheckbox-1" checked />
+          <label>Sport (10)</label>
         </div>
-      </section>
-
-      <!-- section 2 -->
-      <section class="container-2">
-        <h2 class="sub-heading">Capacity</h2>
-        <!-- check boxes -->
-        <div class="check-box-wrapper">
-          <div class="check-box-1-wrapper">
-            <input type="checkbox" id="myCheckbox-7" checked />
-            <label>2 Person (10)</label>
-          </div>
-          <div class="check-box-2-wrapper">
-            <input type="checkbox" id="myCheckbox-8" />
-            <label>4 Person (14)</label>
-          </div>
-          <div class="check-box-3-wrapper">
-            <input type="checkbox" id="myCheckbox-9" />
-            <label>6 Person (12)</label>
-          </div>
-          <div class="check-box-4-wrapper">
-            <input type="checkbox" id="myCheckbox-10" checked />
-            <label>8 or More (16)</label>
-          </div>
+        <div class="check-box-2-wrapper">
+          <input type="checkbox" id="myCheckbox-2" checked />
+          <label>SUV (12)</label>
         </div>
-      </section>
-
-      <!-- section 3 -->
-      <section class="container-3">
-        <h2 class="sub-heading">Price</h2>
-        <!-- price slider -->
-        <div class="slider-container">
-          <input
-            type="range"
-            id="priceSlider"
-            min="0.00"
-            max="100.00"
-            value="50.00"
-            oninput="updatePrice()"
-          />
-          <div class="price-display">
-            Max: $<span id="priceValue">50.00</span>
-          </div>
+        <div class="check-box-3-wrapper">
+          <input type="checkbox" id="myCheckbox-3" />
+          <label>MPV (16)</label>
         </div>
-      </section>
-    </aside>
-
-    <!-- category -->
-    <section>
-      <!-- filter container -->
-      <div class="filter-wrapper">
-        <div class="filter-1">
-          <div class="fliter-1-heading-wrapper">
-            <input type="radio" checked />
-            <h2>Pick-Up</h2>
-          </div>
-
-          <div>
-            <h3 class="v">Location</h3>
-          </div>
+        <div class="check-box-4-wrapper">
+          <input type="checkbox" id="myCheckbox-4" />
+          <label>Sedan (20)</label>
+        </div>
+        <div class="check-box-5-wrapper">
+          <input type="checkbox" id="myCheckbox-5" />
+          <label>Coupe (14)</label>
+        </div>
+        <div class="check-box-6-wrapper">
+          <input type="checkbox" id="myCheckbox-6" checked />
+          <label>Hatchback (4)</label>
         </div>
       </div>
     </section>
 
-    <!-- javascript -->
-    <script src="floater.js"></script>
-  </body>
+    <!-- section 2 -->
+    <section class="container-2">
+      <h2 class="sub-heading">Capacity</h2>
+      <!-- check boxes -->
+      <div class="check-box-wrapper">
+        <div class="check-box-1-wrapper">
+          <input type="checkbox" id="myCheckbox-7" checked />
+          <label>2 Person (10)</label>
+        </div>
+        <div class="check-box-2-wrapper">
+          <input type="checkbox" id="myCheckbox-8" />
+          <label>4 Person (14)</label>
+        </div>
+        <div class="check-box-3-wrapper">
+          <input type="checkbox" id="myCheckbox-9" />
+          <label>6 Person (12)</label>
+        </div>
+        <div class="check-box-4-wrapper">
+          <input type="checkbox" id="myCheckbox-10" checked />
+          <label>8 or More (16)</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="container-3">
+      <h2 class="sub-heading">Price</h2>
+      <!-- price slider -->
+      <div class="slider-container">
+        <input type="range" id="priceSlider" min="0.00" max="100.00" value="50.00" oninput="updatePrice()" />
+        <div class="price-display">
+          Max: $<span id="priceValue">50.00</span>
+        </div>
+      </div>
+
+
+      <!-- CAR 1 -->
+      <div class="main-container mainn-1">
+        <div class="group">
+          <div class="group-2">
+            <span class="text">Koenigsegg</span><span class="text-2">Sport</span>
+          </div>
+          <div class="img"><i class="fa-solid fa-heart" style="color: #ED3F3F;"></i></div>
+        </div>
+        <div class="pic"><img src="assets/car.png" alt=""></div>
+        <div class="wrapper">
+          <div class="section">
+            <div class="section-2">
+              <div class="group-3"><i class="fa-solid fa-gas-pump" style="color: #90a3bf;"></i>
+                <div class="img-2"></div>
+              </div>
+            </div>
+            <span class="text-3">90L</span>
+          </div>
+          <div class="box">
+            <div class="img-3"><i class="fa-solid fa-gears" style="color: #90a3bf;"></i></div>
+            <span class="text-4">Manual</span>
+          </div>
+          <div class="wrapper-2">
+            <div class="section-3">
+              <div class="section-4">
+                <div class="img-4"></div><i class="fa-solid fa-user-group" style="color: #90a3bf;"></i>
+              </div>
+            </div>
+            <span class="text-5">2 People</span>
+          </div>
+        </div>
+        <div class="wrapper-3">
+          <div class="section-5">
+            <div class="box-2">
+              <span class="text-6">$99.00/ </span><span class="text-7">day</span>
+            </div>
+          </div>
+          <div class="section-6">
+            <button onclick="document.location" class="text-8">Rent Now</button>
+          </div>
+        </div>
+        <div class="img-5"></div>
+      </div>
+
+
+      <div class="main-container mainn-1">
+        <div class="group">
+          <div class="group-2">
+            <span class="text">Koenigsegg</span><span class="text-2">Sport</span>
+          </div>
+          <div class="img"><i class="fa-solid fa-heart" style="color: #ED3F3F;"></i></div>
+        </div>
+        <div class="pic"><img src="assets/car.png" alt=""></div>
+        <div class="wrapper">
+          <div class="section">
+            <div class="section-2">
+              <div class="group-3"><i class="fa-solid fa-gas-pump" style="color: #90a3bf;"></i>
+                <div class="img-2"></div>
+              </div>
+            </div>
+            <span class="text-3">90L</span>
+          </div>
+          <div class="box">
+            <div class="img-3"><i class="fa-solid fa-gears" style="color: #90a3bf;"></i></div>
+            <span class="text-4">Manual</span>
+          </div>
+          <div class="wrapper-2">
+            <div class="section-3">
+              <div class="section-4">
+                <div class="img-4"></div><i class="fa-solid fa-user-group" style="color: #90a3bf;"></i>
+              </div>
+            </div>
+            <span class="text-5">2 People</span>
+          </div>
+        </div>
+        <div class="wrapper-3">
+          <div class="section-5">
+            <div class="box-2">
+              <span class="text-6">$99.00/ </span><span class="text-7">day</span>
+            </div>
+          </div>
+          <div class="section-6">
+            <button onclick="document.location" class="text-8">Rent Now</button>
+          </div>
+        </div>
+        <div class="img-5"></div>
+      </div>
+    </section>
+  </aside>
+
+
+
+
+  <section>
+
+  </section>
+
+
+
+  <!-- javascript -->
+  <script src="floater.js"></script>
+</body>
+
 </html>
