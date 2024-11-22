@@ -219,7 +219,7 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #54a6ff;
-  height: 420px;
+  height: 395px;
   overflow: hidden;
   text-align: left;
   font-size: 32px;
@@ -247,7 +247,7 @@ body {
   position: absolute;
   border-radius: 10px;
   background-color: #3563e9;
-  height: 420px;
+  height: 395px;
   overflow: hidden;
   text-align: left;
   font-size: 32px;
@@ -405,7 +405,7 @@ body {
   flex-shrink: 0;
   gap: 8px;
   position: relative;
-  width: 432px;
+  /* width: 432px; */
   height: 44px;
   padding: 0 20px 0 40px;
   margin-top: 2.5rem;
@@ -445,9 +445,10 @@ body {
   }
 
   .text-22 {
-  display: flex;
+  display: inline-block;
   align-items: center;
-  justify-content: center;
+  right: 0;
+  justify-content: space-between;
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
@@ -459,6 +460,8 @@ body {
   text-decoration: underline;
   font-weight: 600;
   line-height: 24px;
+  cursor: pointer;
+  transform: translateX(2452%);
   text-align: center;
   white-space: nowrap;
   z-index: 1;
@@ -867,6 +870,15 @@ body {
   -webkit-transition-property: box-shadow, transform;
 }
 
+
+.text-88:hover,
+.text-88:focus,
+.text-88:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .text-88 {
   display: flex;
   align-items: center;
@@ -916,16 +928,16 @@ body {
   font-size: 14px;
 }
 
-/* New: Styling for splitting the vision statement */
+
 .footer-logo p span {
-  display: block; /* Forces each sentence to appear on a separate line */
+  display: block;
 }
 
 .footer-nav ul {
   list-style: none;
   padding: 0;
-  display: flex; /* Aligns menu items horizontally */
-  gap: 15px; /* Adds space between items */
+  display: flex; 
+  gap: 15px; 
   margin-right: 4rem;
 }
 
