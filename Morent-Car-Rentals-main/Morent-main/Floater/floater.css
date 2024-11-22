@@ -3,12 +3,27 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: #f6f7f9;
+  overflow-x: hidden;
 }
 
+.body-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.cars-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
 
 /* Navbar Styling */
 .navbar {
@@ -105,21 +120,13 @@ body {
   right: -3px;
 }
 
-
-
-
-
-
-
-
 #floater-wrapper {
   background-color: #fff;
   min-height: 100vh;
   padding: 50px;
-  width: 220px;
+  width: 320px;
   /* border: 1px solid #000; */
 }
-
 
 .container-1 .sub-heading,
 .container-2 .sub-heading,
@@ -206,37 +213,31 @@ input[type="range"] {
   width: 100%;
 }
 
-
-
-
-
-
-
 /* <!-- BODY-CARDS SESSION --> */
 
-.mainn-1 {
+/* .mainn-1 {
   display: inline-block;
-}
-
+} */
 
 .main-container {
   overflow: hidden;
 }
 
-.main-container,
+/* .main-container,
 .main-container * {
   box-sizing: border-box;
-}
+} */
 
 .main-container {
   position: relative;
   width: 304px;
   height: 388px;
-  margin: 0 0 0 19rem;
+  /* margin: 0 0 0 19rem; */
   background: #ffffff;
   overflow: hidden;
   border-radius: 10px;
 }
+
 .group {
   position: relative;
   width: 256px;
