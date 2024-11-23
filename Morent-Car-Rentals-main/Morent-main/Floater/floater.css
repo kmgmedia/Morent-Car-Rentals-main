@@ -124,7 +124,7 @@ body {
   background-color: #fff;
   min-height: 100vh;
   padding: 50px;
-  width: 320px;
+  width: 480px;
   /* border: 1px solid #000; */
 }
 
@@ -593,10 +593,6 @@ input[type="range"] {
   background-size: cover;
   z-index: 25;
 }
-<<<<<<< HEAD
-
-
-
 
 /* <!-- Footer session --> */
 
