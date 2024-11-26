@@ -532,7 +532,7 @@ input[type="range"] {
   font-weight: 700;
   line-height: 25.2px;
   text-align: left;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 
 .section-6 .text-8 {

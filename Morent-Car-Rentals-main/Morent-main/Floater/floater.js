@@ -11,9 +11,8 @@ function updatePrice() {
   slider.style.background = `linear-gradient(to right, #3498db ${fillPercentage}%, #ddd ${fillPercentage}%)`;
 }
 
-
 const companyBtn = document.getElementById("companyLogo");
 
-    companyBtn.addEventListener("click", function () {
-    window.location.href = "./Abody/index.html";
-    });
+companyBtn.addEventListener("click", function () {
+  window.location.href = "./Abody/index.html";
+});

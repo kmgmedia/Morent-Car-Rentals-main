@@ -776,7 +776,7 @@ body {
   text-align: left;
 }
 
-.text-7 {
+.text-7, .text-77 {
   position: relative;
   color: #90a3bf;
   font-family: Plus Jakarta Sans;
@@ -784,6 +784,9 @@ body {
   font-weight: 700;
   line-height: 25.2px;
   text-align: left;
+}
+
+.text-77 {
   text-decoration: line-through;
 }
 
